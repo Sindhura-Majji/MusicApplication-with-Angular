@@ -1,0 +1,21 @@
+.fixed-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background: #151B54;
+  }
+
+  footer img{
+
+	height:50px;
+	width:55px;
+	padding-right: 20px;
+	margin-top:20px;
+	float:right;
+}
+.footer{
+ text-align: center;
+ color: white;
+ padding-top: 5px;
+}

@@ -1,0 +1,36 @@
+<div class="nav" style="position: fixed; left:0; top: 0; width: 100% " >
+  <mat-toolbar color="primary">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div>
+    <!--    <div class="image">-->
+    <img src="assets/img/logo.jpg" alt="logo"/>
+    <!--    </div>-->
+    </div>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button routerLink="/about-us">Home</a>
+      <a mat-button routerLink="/prices">About</a>
+      <a mat-button routerLink="/start-page">Sign-in</a>
+      <a mat-button routerLink="/offer">Register</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </div>
+    <button mat-button (click)=getPlayList()> MyPlaylist <mat-icon>playlist_play</mat-icon> </button>
+    <app-search-component></app-search-component>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-button routerLink="/about-us">About us</a>
+        <a mat-button routerLink="/prices">Prices</a>
+        <a mat-button routerLink="/start-page">Start page</a>
+        <a mat-button routerLink="/offer">Offer</a>
+        <a mat-button routerLink="/contact">Contact</a>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+</div>
